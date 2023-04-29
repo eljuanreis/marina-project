@@ -35,11 +35,6 @@ public class ProprietaryControl implements IProprietaryControl {
 		this.proprietary.setPhone(phone);		
 	}
 
-	@Override
-	public void setPropInq(boolean is) {
-		// TODO Auto-generated method stub
-		
-	}
 
 	@Override
 	public void saveProprietary() {
@@ -48,14 +43,12 @@ public class ProprietaryControl implements IProprietaryControl {
 
 	@Override
 	public void clearProprietary() {
-		// TODO Auto-generated method stub
-		
+		this.proprietary.clear();
 	}
 
 	@Override
 	public void cancelProprietary() {
-		// TODO Auto-generated method stub
-		
+		this.proprietary.delete();
 	}
 
 }

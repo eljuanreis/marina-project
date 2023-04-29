@@ -1,9 +1,10 @@
 package boundary;
 
+import contracts.IForm;
 import control.ProprietaryControl;
 import entity.Proprietary;
 
-public class SaveProprietaryForm {
+public class SaveProprietaryForm implements IForm {
 
 	public void showForm() {
 		// TODO: Exibir formulário para prencher os dados

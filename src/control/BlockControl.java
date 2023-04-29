@@ -2,6 +2,7 @@ package control;
 
 import boundary.BlockForm;
 import contracts.IBlockControl;
+import entity.Apartment;
 import entity.Block;
 
 public class BlockControl implements IBlockControl {
@@ -17,6 +18,10 @@ public class BlockControl implements IBlockControl {
 		return new BlockForm();
 	}
 	
+	/**
+	 * Injeção de dependencia no construtor
+	 * @param block
+	 */
 	public BlockControl(Block block) {
 		this.block = block;
 	}
@@ -27,20 +32,18 @@ public class BlockControl implements IBlockControl {
 	}
 
 	@Override
-	public void setNumAp(int number) {
-		// TODO: fazer num ap
+	public void setNumAp(Apartment ap, int number) {
+		this.block.setApartament(ap, number);
 	}
 
 	@Override
 	public void cancelBlock() {
-		// TODO Auto-generated method stub
-		
+		this.block.delete();
 	}
 
 	@Override
 	public void clearBlock() {
-		// TODO Auto-generated method stub
-		
+		this.block.clear();
 	}
 
 	@Override

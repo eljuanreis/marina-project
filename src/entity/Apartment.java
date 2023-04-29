@@ -9,11 +9,16 @@ public class Apartment extends BaseEntity {
 	// relationship's
 	private Block block;
 	private Proprietary proprietary;
+	private Tenant tenant;
 	
 	int numAp;
 	int roomsSize;
 	
 	OcupationType ocupationType;
+	
+	public Apartment findApByNumber(Block block, int num) {
+		return this.block.getApartment(num);
+	}
 	
 	public void setBlock(Block block) {
 		this.block = block;
@@ -31,6 +36,10 @@ public class Apartment extends BaseEntity {
 		this.ocupationType = ocupation;
 	}
 	
+	public void setTenant(Tenant tenant) {
+		this.tenant = tenant;
+	}
+	
 	public Block getBlock() {
 		return this.block;
 	}
@@ -38,5 +47,8 @@ public class Apartment extends BaseEntity {
 	public Proprietary getProprietary() {
 		return this.proprietary;
 	}
-
+	
+	public Tenant getTenant() {
+		return this.tenant;
+	}
 }

@@ -22,14 +22,17 @@ public class ApartmentControl implements IApartamentControl {
 		return new ApartamentForm();
 	}
 
+	/**
+	 * Injeção de dependencia no construtor
+	 * @param apartment
+	 */
 	public ApartmentControl(Apartment apartment) {
 		this.apartment = apartment;
 	}
 
 	@Override
 	public Apartment findAp(Block block, int number) {
-		// TODO Buscar apartamento por bloco e numero
-		return null;
+		return this.apartment.findApByNumber(block, number);
 	}
 
 	@Override
@@ -54,20 +57,17 @@ public class ApartmentControl implements IApartamentControl {
 
 	@Override
 	public Tenant findTenant() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.apartment.getTenant();
 	}
 
 	@Override
 	public void cancelAp() {
-		// TODO Auto-generated method stub
-		
+		this.apartment.delete();
 	}
 
 	@Override
 	public void clearAp() {
-		// TODO Auto-generated method stub
-		
+		this.apartment.clear();
 	}
 
 	@Override

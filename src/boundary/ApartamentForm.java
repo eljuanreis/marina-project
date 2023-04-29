@@ -1,9 +1,10 @@
 package boundary;
 
+import contracts.IForm;
 import control.ApartmentControl;
 import entity.Apartment;
 
-public class ApartamentForm {
+public class ApartamentForm implements IForm {
 	
 	public void showForm() {
 		// TODO: Exibir formulário para prencher os dados

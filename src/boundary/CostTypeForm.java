@@ -1,9 +1,10 @@
 package boundary;
 
+import contracts.IForm;
 import control.CostTypeControl;
 import entity.CostType;
 
-public class CostTypeForm {
+public class CostTypeForm implements IForm {
 
 	public void showForm() {
 		// TODO: Exibir formulário para prencher os dados

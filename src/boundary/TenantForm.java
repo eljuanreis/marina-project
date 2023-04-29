@@ -1,9 +1,10 @@
 package boundary;
 
+import contracts.IForm;
 import control.TenantControl;
 import entity.Tenant;
 
-public class TenantForm {
+public class TenantForm implements IForm {
 
 	public void showForm() {
 		// TODO: Exibir formulário para prencher os dados

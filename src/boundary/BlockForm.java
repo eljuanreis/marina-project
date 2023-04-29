@@ -1,10 +1,11 @@
 package boundary;
 
+import contracts.IForm;
 import control.BlockControl;
 
 import entity.Block;
 
-public class BlockForm {
+public class BlockForm implements IForm {
 	public void showForm() {
 		// TODO: Exibir formulário para prencher os dados
 	}

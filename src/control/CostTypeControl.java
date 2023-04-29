@@ -18,6 +18,10 @@ public class CostTypeControl implements ICostType {
 		return new CostTypeForm();
 	}
 
+	/**
+	 * Injeção de dependencia no construtor
+	 * @param costType
+	 */
 	public CostTypeControl(CostType costType) {
 		this.costType = costType;
 	}

@@ -17,6 +17,10 @@ public class TenantControl implements ITenantControl {
 		return new TenantForm();
 	}
 
+	/**
+	 * Injeção de dependencia no construtor
+	 * @param tenant
+	 */
 	public TenantControl(Tenant tenant) {
 		this.tenant = tenant;
 	}
@@ -33,14 +37,12 @@ public class TenantControl implements ITenantControl {
 
 	@Override
 	public void cancelTenant() {
-		// TODO Auto-generated method stub
-		
+		this.tenant.delete();
 	}
 
 	@Override
 	public void clearTenant() {
-		// TODO Auto-generated method stub
-		
+		this.tenant.clear();
 	}
 
 	@Override
