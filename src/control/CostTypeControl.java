@@ -1,6 +1,7 @@
 package control;
 
 import boundary.CostTypeForm;
+import boundary.SaveProprietaryForm;
 import contracts.ICostType;
 import entity.CostType;
 

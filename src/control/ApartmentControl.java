@@ -1,5 +1,7 @@
 package control;
 
+import boundary.ApartamentForm;
+import boundary.BlockForm;
 import contracts.IApartamentControl;
 import entity.Apartment;
 import entity.Block;
@@ -10,6 +12,15 @@ import enums.OcupationType;
 public class ApartmentControl implements IApartamentControl {
 
 	private Apartment apartment;
+	
+	/**
+	 * Função responsável por mostrar a boundary
+	 * OBS: estática, não precisa de contexto.
+	 * {@link SaveProprietaryForm}
+	 */
+	public static ApartamentForm showBoundary() {
+		return new ApartamentForm();
+	}
 
 	public ApartmentControl(Apartment apartment) {
 		this.apartment = apartment;
