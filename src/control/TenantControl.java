@@ -11,7 +11,7 @@ public class TenantControl implements ITenantControl {
 	/**
 	 * Função responsável por mostrar a boundary
 	 * OBS: estática, não precisa de contexto.
-	 * {@link SaveProprietaryForm}
+	 * {@link TenantForm}
 	 */
 	public static TenantForm showBoundary() {
 		return new TenantForm();

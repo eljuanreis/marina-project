@@ -1,7 +1,7 @@
 package control;
 
 import boundary.CostTypeForm;
-import boundary.SaveProprietaryForm;
+
 import contracts.ICostType;
 import entity.CostType;
 
@@ -12,7 +12,7 @@ public class CostTypeControl implements ICostType {
 	/**
 	 * Função responsável por mostrar a boundary
 	 * OBS: estática, não precisa de contexto.
-	 * {@link SaveProprietaryForm}
+	 * {@link CostTypeForm}
 	 */
 	public static CostTypeForm showBoundary() {
 		return new CostTypeForm();

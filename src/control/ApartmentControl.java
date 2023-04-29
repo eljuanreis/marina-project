@@ -16,7 +16,7 @@ public class ApartmentControl implements IApartamentControl {
 	/**
 	 * Função responsável por mostrar a boundary
 	 * OBS: estática, não precisa de contexto.
-	 * {@link SaveProprietaryForm}
+	 * {@link ApartamentForm}
 	 */
 	public static ApartamentForm showBoundary() {
 		return new ApartamentForm();
