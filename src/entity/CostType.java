@@ -1,8 +1,8 @@
 package entity;
 
-public class Block extends BaseEntity {
+public class CostType extends BaseEntity {
 
-	public String entityName = "Bloco";
+	public String entityName = "Tipo de despesa";
 	
 	private String name;
 	
@@ -13,4 +13,5 @@ public class Block extends BaseEntity {
 	public String getName() {
 		return this.name;
 	}
+
 }

@@ -5,9 +5,21 @@ public class Tenant extends BaseEntity {
 	public String entityName = "Inquilino";
 
 	private String name;
+	private String phone;
 
-	public Tenant(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
+	
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
 
+	public String getName() {
+		return this.name;
+	}
+	
+	public String getPhone() {
+		return this.phone;
+	}
 }

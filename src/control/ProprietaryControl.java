@@ -43,8 +43,7 @@ public class ProprietaryControl implements IProprietaryControl {
 
 	@Override
 	public void saveProprietary() {
-		// TODO Auto-generated method stub
-		
+		this.proprietary.save();
 	}
 
 	@Override
