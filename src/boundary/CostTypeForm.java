@@ -19,7 +19,7 @@ public class CostTypeForm implements IForm {
 
 		CostTypeControl cControl = new CostTypeControl(costType);
 
-		cControl.setName("Teste");
+		cControl.setName(enums.CostType.INDIVIDUAL);
 		
 		cControl.saveCostType();
 	}

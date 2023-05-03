@@ -27,8 +27,8 @@ public class CostTypeControl implements ICostType {
 	}
 
 	@Override
-	public void setName(String name) {
-		this.costType.setName(name);
+	public void setName(enums.CostType individual) {
+		this.costType.setName(individual);
 	}
 
 	@Override

@@ -9,6 +9,7 @@ public class Block extends BaseEntity {
 	private String name;
 	private ArrayList<Apartment> apartments = new ArrayList<>();
 	
+	
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -27,5 +28,9 @@ public class Block extends BaseEntity {
 		} catch (Exception e) {
 			return null;
 		}
+	}
+	
+	public ArrayList<Apartment> allApartaments() {
+		return this.apartments;
 	}
 }

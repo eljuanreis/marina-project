@@ -1,5 +1,7 @@
 package entity;
 
+import java.util.ArrayList;
+
 import enums.OcupationType;
 
 public class Apartment extends BaseEntity {
@@ -10,7 +12,8 @@ public class Apartment extends BaseEntity {
 	private Block block;
 	private Proprietary proprietary;
 	private Tenant tenant;
-	
+	private ArrayList<Cost> costs = new ArrayList<Cost>();
+
 	int numAp;
 	int roomsSize;
 	
@@ -50,5 +53,13 @@ public class Apartment extends BaseEntity {
 	
 	public Tenant getTenant() {
 		return this.tenant;
+	}
+	
+	public void setCost(Cost cost) {
+		this.costs.add(cost);
+	}
+	
+	public ArrayList<Cost> getCost() {
+		return this.costs;
 	}
 }

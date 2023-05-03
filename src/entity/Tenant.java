@@ -6,7 +6,7 @@ public class Tenant extends BaseEntity {
 
 	private String name;
 	private String phone;
-
+	
 	public void setName(String name) {
 		this.name = name;
 	}

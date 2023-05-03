@@ -4,13 +4,13 @@ public class CostType extends BaseEntity {
 
 	public String entityName = "Tipo de despesa";
 	
-	private String name;
+	private enums.CostType name;
 	
-	public void setName(String name) {
+	public void setName(enums.CostType name) {
 		this.name = name;
 	}
 	
-	public String getName() {
+	public enums.CostType getName() {
 		return this.name;
 	}
 
